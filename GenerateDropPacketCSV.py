@@ -1,8 +1,8 @@
-f = open("TcpHyblaPktDrop.tr")
-f1 = open("TcpNewRenoPktDrop.tr")
-f2= open("TcpScalablePktDrop.tr")
-f3 = open("TcpVegasPktDrop.tr")
-f4 = open("TcpWestwoodPktDrop.tr")
+f = open("TcpHybla_packet_drop.tr")
+f1 = open("TcpNewReno_packet_drop.tr")
+f2= open("TcpScalable_packet_drop.tr")
+f3 = open("TcpVegas_packet_drop.tr")
+f4 = open("TcpWestwood_packet_drop.tr")
 
 ans = list()
 contents = f.read()
@@ -17,7 +17,7 @@ lines2 = contents2.split('\n')
 lines3 = contents3.split('\n')
 lines4 = contents4.split('\n')
 
-f5 = open("outputpackdrop.csv", "w")
+f5 = open("output_packet_drop.csv", "w")
 f5.write("Time,TcpHybla,TcpNewReno,TcpScalable,TcpVegas,TcpWestwood" + "\n")
 
 for i,line in enumerate(lines):

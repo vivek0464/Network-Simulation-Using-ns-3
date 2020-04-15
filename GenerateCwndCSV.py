@@ -1,8 +1,8 @@
-f = open("TcpHyblaCwnd.tr")
-f1 = open("TcpNewRenoCwnd.tr")
-f2= open("TcpScalableCwnd.tr")
-f3 = open("TcpVegasCwnd.tr")
-f4 = open("TcpWestwoodCwnd.tr")
+f = open("TcpHybla_cwnd.tr")
+f1 = open("TcpNewReno_cwnd.tr")
+f2= open("TcpScalable_cwnd.tr")
+f3 = open("TcpVegas_cwnd.tr")
+f4 = open("TcpWestwood_cwnd.tr")
 
 ans = list()
 contents = f.read()
@@ -17,7 +17,7 @@ lines2 = contents2.split('\n')
 lines3 = contents3.split('\n')
 lines4 = contents4.split('\n')
 
-f5 = open("outputcwnd.csv", "w")
+f5 = open("output_cwnd.csv", "w")
 
 f5.write("Time,TcpHybla,TcpNewReno,TcpScalable,TcpVegas,TcpWestwood" + "\n")
 

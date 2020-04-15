@@ -1,0 +1,5 @@
+./waf --run "scratch/tcp-variants-comparison --transport_prot=TcpNewReno"
+./waf --run "scratch/tcp-variants-comparison --transport_prot=TcpHybla"
+./waf --run "scratch/tcp-variants-comparison --transport_prot=TcpWestwood"
+./waf --run "scratch/tcp-variants-comparison --transport_prot=TcpScalable"
+./waf --run "scratch/tcp-variants-comparison --transport_prot=TcpVegas"

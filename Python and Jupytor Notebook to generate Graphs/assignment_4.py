@@ -49,7 +49,7 @@ uploaded=files.upload()
 import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = (15,10)
 
-data = pd.read_csv("outputcwnd.csv")
+data = pd.read_csv("output_cwnd.csv")
 xaxes = data['Time']
 TcpNewReno = data['TcpNewReno']
 TcpHybla = data['TcpHybla']
@@ -67,6 +67,7 @@ plt.xlabel('Time(seconds)')
 plt.ylabel('TCP Congestion Window Size(Bytes)')
 plt.legend()
 plt.title('Comparison of TCP Congestion Window Size(Bytes) wrt Time(Seconds)')
+plt.grid()
 plt.show()
 
 # Plot all the curves independently
@@ -89,6 +90,12 @@ plt2.set_title('TcpHybla')
 plt3.set_title('TcpWestwood')
 plt4.set_title('TcpScalable')
 plt5.set_title('TcpVegas')
+
+plt1.grid()
+plt2.grid()
+plt3.grid()
+plt4.grid()
+plt5.grid()
 
 fig.subplots_adjust(hspace=.5,wspace=0.5) 
 fig.show()
@@ -108,7 +115,7 @@ uploaded=files.upload()
 import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = (15,10)
 
-data = pd.read_csv('outputpackdrop.csv')
+data = pd.read_csv('output_packet_drop.csv')
 xaxes = data['Time']
 TcpNewReno = data['TcpNewReno']
 TcpHybla = data['TcpHybla']
@@ -128,6 +135,7 @@ plt.xlabel('Time(seconds)')
 plt.ylabel('Cumulative TCP packets dropped')
 plt.legend()
 plt.title('Comparison of Cumulative TCP packets dropped wrt Time')
+plt.grid()
 plt.show()
 
 # Plot all the curves independently
@@ -151,6 +159,12 @@ plt3.set_title('TcpWestwood')
 plt4.set_title('TcpScalable')
 plt5.set_title('TcpVegas')
 
+plt1.grid()
+plt2.grid()
+plt3.grid()
+plt4.grid()
+plt5.grid()
+
 fig.subplots_adjust(hspace=.5,wspace=0.5)
 fig.show()
 
@@ -169,7 +183,7 @@ uploaded=files.upload()
 import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = (15,10)
 
-data = pd.read_csv("outputBytesTx.csv")
+data = pd.read_csv("output_bytes_tx.csv")
 xaxes = data['Time']
 TcpNewReno = data['TcpNewReno']
 TcpHybla = data['TcpHybla']
@@ -188,6 +202,7 @@ plt.xlabel('Time(seconds)')
 plt.ylabel('TCP Cumulative Bytes Transfered')
 plt.legend()
 plt.title('Comparison of Cumulative Bytes Transfered wrt Time')
+plt.grid()
 plt.show()
 
 # Plot all the curves independently
@@ -220,6 +235,12 @@ plt4.set_ylabel('Cumulative byte Transfered')
 plt5.set_title('TcpVegas')
 plt5.set_xlabel('Time(Seconds)')
 plt5.set_ylabel('Cumulative byte Transfered')
+
+plt1.grid()
+plt2.grid()
+plt3.grid()
+plt4.grid()
+plt5.grid()
 
 fig.subplots_adjust(hspace=.5,wspace=0.5) 
 fig.show()
